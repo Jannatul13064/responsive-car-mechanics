@@ -16,7 +16,7 @@ const Booking = () => {
 
     return (
         <div>
-            <h2>Details of :- <span className='text-warning'>{service.name} Price : {service.price}</span></h2>
+            <h2>Details of :- <span className='text-warning' key={service._id}>{service.name} Price : {service.price}</span></h2>
             <h4>This is booking: {serviceId}</h4>
             <img src={service.img} alt="" srcset="" />
         </div>

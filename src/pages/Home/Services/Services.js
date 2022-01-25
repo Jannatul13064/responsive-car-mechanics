@@ -18,7 +18,7 @@ const Services = () => {
             <div className="services-container container my-4">
                 {
                     services.map(service => <Service
-                        key={service.id}
+                        key={service._id}
                         service={service}
                     ></Service>)
                 }

@@ -27,7 +27,7 @@ const ManageServices = () => {
         <div>
             <h2>This is manage Services</h2>
             {
-                services.map(service => <div>
+                services.map(service => <div key={service._id}>
                     <h4>{service.name}</h4>
                     <button onClick={() => handleDelete(service._id)}>Delete</button>
                 </div>)
